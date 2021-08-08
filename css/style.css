@@ -1,0 +1,327 @@
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir.woff2') format('woff2'),
+         url('../fonts/Vazir.woff') format('woff'),
+         url('../fonts/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir-Bold.woff2') format('woff2'),
+         url('../fonts/Vazir-Bold.woff') format('woff'),
+         url('../fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Black.eot');
+    src: url('../fonts/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir-Black.woff2') format('woff2'),
+         url('../fonts/Vazir-Black.woff') format('woff'),
+         url('../fonts/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Medium.eot');
+    src: url('../fonts/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir-Medium.woff2') format('woff2'),
+         url('../fonts/Vazir-Medium.woff') format('woff'),
+         url('../fonts/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Light.eot');
+    src: url('../fonts/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir-Light.woff2') format('woff2'),
+         url('../fonts/Vazir-Light.woff') format('woff'),
+         url('../fonts/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Thin.eot');
+    src: url('../fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir-Thin.woff2') format('woff2'),
+         url('../fonts/Vazir-Thin.woff') format('woff'),
+         url('../fonts/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+body{
+    background: url('../img/wp4786677-joaquin-joker-wallpapers.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    font-family: 'Vazir', vazir;
+}
+#bg{
+    background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 1)), url('../img/5.jpg') no-repeat;
+    position: absolute;
+    left: 22px;
+    top: 0;
+    height: 100vh;
+    width: 62%;
+    display: block;
+    background-size: cover;
+}
+#bg nav{
+    z-index: 1;
+}
+#bg nav a{
+    color: #fff;
+    font-size: 1em;
+    margin-right: 20px;
+}
+#bg nav a:hover{
+    color: rgb(252, 21, 78);  
+}
+#bg nav a{
+    animation: fadeInRight 0.7s linear forwards;
+    opacity: 0;
+    animation-delay: 2s;
+}
+@keyframes fadeInRight{
+    0%
+    {
+        transform: translateY(150px);
+        opacity: 0;
+    } 
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+ }
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(245, 18, 75);
+    transition: width .5s;
+}
+.cool-link:hover::after{
+    width: 100%;
+    transition: width .5s;  
+}
+.joker{
+    direction: ltr !important;
+}
+.joker img{
+   float: left;
+   height: 70px;
+   animation: fadeIntop 0.7s linear forwards;
+    opacity: 0;
+    animation-delay: 2s;
+}
+@keyframes fadeIntop{
+    0%
+    {
+        transform: translateX(150px);
+        opacity: 0;
+    } 
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+ }
+.box{
+    position: relative;
+    width: 750px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin: 80px 0px 30px;
+    background: rgba(58, 8, 114,0.2);
+}
+.box:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+.box:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(10px);
+}
+.box:before,.box:after{
+    background: linear-gradient(235deg,#ff0000,#060c21,#00bcd4);
+}
+.content{
+   padding: 20px; 
+   box-sizing: border-box;
+   color: #fff;
+}
+h1{
+    font-size: 3.5em;
+    font-family: BZiba,'BZiba',tahoma;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    transform-origin: right;
+    transform: scaleX(0);
+    animation: revealTextReverse 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    animation: revealText 1s ease-in-out forwards;
+    animation-delay: 3s;
+}
+@keyframes revealText{
+    0%{
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(0);
+    }
+}
+@keyframes revealTextReverse{
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+ p{
+    font-size: 1.3em;
+    position: relative;
+    
+    transform-origin: right;
+    transform: scaleX(0);
+    animation: revealTextReverse 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+ p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    animation: revealText 1s ease-in-out forwards;
+    animation-delay: 3s;
+}
+.article p{
+    color: rgb(190, 190, 190);
+    font-size: .8em;
+}
+.article p span{
+    color: #ff0000;
+    font-weight: bold;
+}
+.fallow{
+    margin: 100px 0 0 ;
+}
+.fallow a{
+    display: block;
+    animation: fadeInRight 0.7s linear forwards;
+    opacity: 0;
+    animation-delay: 2s;
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #fff;
+}
+.fallow a:hover{
+    color: #ff0000;
+}
+.element1{
+    opacity: 0;
+    margin-left: 30px;
+    margin-top: 110px;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 20px solid #ff0000;
+    animation: rotate 40s linear infinite, fadeIn 1s linear forwards;
+    animation-delay: 3.8s;
+}
+.element2{
+    opacity: 0;
+    margin-top: 100px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(248, 247, 250);
+    animation: rotate 30s linear infinite, fadeIn 1s linear forwards;
+    animation-delay: 3.8s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(405deg);
+    }
+}
+.open{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 10000;
+}
+.open .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: top;
+    animation: open 1s ease-in-out forwards;
+}
+.open .layer:nth-child(1){
+    background: #fff;
+    z-index: 2;
+}
+.open .layer:nth-child(2){
+    background: #ff0000;
+    background-size: cover;
+    background-position: center;
+    animation-delay: 1s;
+    z-index: 1;
+}
+@keyframes open{
+    0%{
+        transform: scaleX(1);
+    }
+    100%
+    {
+        transform: scaleX(0);
+    }
+}
